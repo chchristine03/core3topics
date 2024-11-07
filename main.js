@@ -1,31 +1,5 @@
-const images = document.querySelectorAll(".draggable");
-const box = document.getElementById("box");
+const divElement = document.querySelector('.d13'); // Replace 'div' with the ID or class of your actual div element
 
-images.forEach((img) => {
-    img.addEventListener("dragstart", function(event) {
-        event.dataTransfer.setData("text/plain", event.target.id);
-    });
-});
-
-box.addEventListener("dragover", function(event) {
-    event.preventDefault();
-});
-
-box.addEventListener("drop", function(event) {
-    event.preventDefault();
-
-    const data = event.dataTransfer.getData("text/plain");
-    const draggedElement = document.getElementById(data);
-
-    const rect = box.getBoundingClientRect();
-    const x = event.clientX - rect.left - draggedElement.clientWidth / 2;
-    const y = event.clientY - rect.top - draggedElement.clientHeight / 2;
-
-    draggedElement.style.position = "absolute";
-    draggedElement.style.left = x + "px";
-    draggedElement.style.top = y + "px";
-
-    if (!box.contains(draggedElement)) {
-        box.appendChild(draggedElement);
-    }
+divElement.addEventListener('click', function() {
+  window.location.href = 'https://chchristine03.github.io/core3topics/story2/index.html'; // Replace 'https://www.example.com' with the URL of your desired page
 });
