@@ -11,13 +11,13 @@ body {
     background-color: cyan;
     width: 900px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Two equal columns */
-    gap: 10px; /* Space between items */
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 10px; 
     padding: 10px;
 }
 
 .envelope-size img {
-    width: 100%; /* Make each image fill its grid cell */
+    width: 100%; 
 }
 
 .subtitle{
@@ -29,8 +29,8 @@ body {
     color:rgb(214, 208, 169);
     background-color: rgba(192, 255, 217, 0);
     margin-bottom:20px;
-    opacity:70%;
-    filter: drop-shadow(16px 16px 20px #d1cab7)
+    opacity:100%;
+    filter: drop-shadow(16px 16px 20px #d1cab7);
 }
 .title{
     font-family: "legitima", serif;
@@ -44,12 +44,14 @@ body {
     position: relative;
     background-color:rgba(0, 0, 0, 0);
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: rgb(214, 208, 169);;
+    -webkit-text-stroke-color: rgb(214, 208, 169);
+    z-index: 10;
 }
 
 .draggable {
     width: 200px;
-    filter: drop-shadow(16px 16px 20px #646158) sepia(100%) opacity(90%) brightness(90%);
+    filter: drop-shadow(16px 16px 20px #79c8e7) sepia(100%) opacity(90%) brightness(90%);
+    z-index: 101;
 }
 
 
@@ -58,13 +60,13 @@ body {
     background-color: cyan;
     width: 900px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Two equal columns */
-    gap: 10px; /* Space between items */
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 10px; 
     padding: 10px;
 }
 
 .envelope-size img {
-    width: 100%; /* Make each image fill its grid cell */
+    width: 100%; 
 }
 
 
@@ -73,21 +75,24 @@ body {
     font-weight: 400;
     font-style: italic;
     font-size: 20px;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: left;
     border: 3px solid rgba(255, 88, 88, 0);
     color:rgb(180, 188, 201);
-    background-color: #d1cab700;
+    background-color: #a43131bd;
+    z-index: 0;
+    
 }
 .text1 {
-    width: 400px;
+    width: 500px;
     position:absolute;
-    top:50px;
+    top:650px;
+    left:200px;
 }
 .text2 {
-    width: 300px;
+    width: 500px;
     position:absolute;
-    bottom:100px;
+    top:650px;
     right:100px;
 }
 
@@ -99,3 +104,71 @@ body {
     height: 100%;
     box-shadow: 0 0 200px rgba(22, 16, 0, 0.9) inset;
   }
+
+  .back{
+    position: absolute;
+    top: 10px;
+    right:10px;
+    width:100px;
+    height:100px;
+  }
+  .pink-ruin img{
+    position: absolute;
+    left:0px;
+    top: 10px;
+    width:1000px;
+    height:auto;
+    filter: drop-shadow(16px 16px 20px #646158) sepia(100%) opacity(54%) brightness(50%);
+  }
+  .broken-glass img{
+    position: absolute;
+    left:0px;
+    top: 10px;
+    width:100%;
+    height:auto;
+    filter: drop-shadow(16px 16px 20px #646158) sepia(100%) opacity(40%) brightness(100%);
+  }
+  .blueberry img{
+    position: absolute;
+    right:0px;
+    top: 10px;
+    width:500px;
+    height:auto;
+    filter: drop-shadow(16px 16px 20px #646158) sepia(100%) opacity(40%) brightness(90%);
+  }
+  .backcandle img {
+    width:60px;
+    height:auto;
+    filter: opacity(100%) brightness(0%);
+
+  }
+  .backcandle {
+    position:absolute;
+    top: 10px;
+    right:100px;
+    filter: drop-shadow(0px 0px 10px #77d8ff);
+  }
+  
+  .bodytext {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+
+
+--
+.bodytext {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in {
+    opacity: 1;
+    pointer-events: auto; 
+}
+

@@ -1,5 +1,10 @@
 const images = document.querySelectorAll(".draggable");
 const box = document.getElementById("box");
+const bodyText1 = document.querySelector(".text1");
+const bodyText2 = document.querySelector(".text2");
+
+bodyText1.classList.add("bodytext");
+bodyText2.classList.add("bodytext");
 
 images.forEach((img) => {
     img.addEventListener("dragstart", function(event) {
@@ -28,4 +33,17 @@ box.addEventListener("drop", function(event) {
     if (!box.contains(draggedElement)) {
         box.appendChild(draggedElement);
     }
+
+    const allDraggedInBox = Array.from(images).every(img => box.contains(img));
+
+    if (allDraggedInBox) {
+        bodyText1.classList.add("fade-in");
+        bodyText2.classList.add("fade-in");
+    }
+});
+
+const divElement = document.querySelector('.backcandle'); 
+
+divElement.addEventListener('click', function() {
+  window.location.href = 'https://chchristine03.github.io/core3topics/index.html';
 });
