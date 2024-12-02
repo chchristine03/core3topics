@@ -10,6 +10,7 @@ body {
 .calendar-container{
     display:flex;
     justify-content: center;
+
 }
 
 .grid-container {
@@ -20,13 +21,16 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
     justify-content:center;
-
+    gap:20px;
 
 }
 
 .grid-item {
     background-color: rgba(255, 192, 203, 0);
-    font-size: 30px;
+    font-family: "legitima", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
     text-align: center;
     border: solid;
     z-index:100;
@@ -34,11 +38,15 @@ body {
     border-width: 1px;
     color:white;
     border-color:rgb(224, 202, 202);
+    aspect-ratio: 1; /* Ensures squares remain 1:1 in ratio */
+    overflow: hidden; /* Prevents content from expanding the box */
+    
     
 }
 .grid-item img {
     object-fit: contain;
     max-width: 100%;
+    
 }
 
 .chosen{
@@ -47,59 +55,47 @@ body {
     border-color:rgb(224, 202, 202);
 
 }
-.d1{
-
-}
-
-.d13{
-
-}
-.d17{
-
-}
-.d22{
-
-}
-.d31{
-
-}
-
 
 
 .writing{
     margin-top:10px;
-    font-size: 25px;
-    color:rgb(191 47 46);
-    font-family: "forma-djr-micro", sans-serif;
-    font-weight: 400;
-    font-style: italic;
+    font-size: 20px;
+    color:rgb(191 47 46);    
+    font-family: "legitima", serif;
+    font-weight: 500;
+    font-style: normal;
+
 }
 
 .top-title{
+    font-family: "forma-djr-micro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     position:absolute;
-    font-size: 200px;
+    font-size: 150px;
     text-align: left;
     padding-bottom:30px;
-    top: 10px;
+    top: 100px;
     left:60px;
     z-index:110;
-    color:rgba(142, 175, 227, 0.616);
     justify-content:center;
-    color: rgb(191 47 46);  
+    color: rgb(142, 175, 227); 
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: rgb(142, 175, 227);
+    -webkit-text-stroke-color:rgb(191 47 46);  
 }
 
 .bottom-title{
+    font-family: "forma-djr-micro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     position:absolute;
-    font-size: 200px;
+    font-size: 150px;
     text-align: right;
     padding-bottom:30px;
     bottom: 10px;
     right:60px;
     z-index:110;
-    color:rgba(142, 175, 227, 0.616);
-    color: rgb(191 47 46);  
+    color: rgb(142, 175, 227);
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: rgb(142, 175, 227);
+    -webkit-text-stroke-color: rgb(191 47 46);  
 }
