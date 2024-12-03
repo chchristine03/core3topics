@@ -41,10 +41,16 @@ body {
     width:40%;
     padding:30px;
   }
+
  #congratulations {
     background-color: #e4f0f5;
-
+    }
+  
+  textarea{
+    margin-left: 10%;
+    max-width: 90%;
   }
+  
   textarea {
     width: 100%;
     height: 100px;
