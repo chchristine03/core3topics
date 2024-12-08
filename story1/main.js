@@ -1,17 +1,23 @@
+function displayCurrentTime() {
+  const now = new Date();
+  
+  // Extract hours, minutes, seconds, and milliseconds
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
 
-function startTime() {
-    const today = new Date();
-    let h = today.getHours();
-    let m = today.getMinutes();
-    let s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-    setTimeout(startTime, 1000);
-  }
+  // Format the time
+  const currentTime = `${hours}:${minutes}:${seconds}`;
+  
+  // Display in the element with id="time"
+  document.getElementById("time").innerText = currentTime;
+}
 
+// Call the function every 10 milliseconds to update the time dynamically
+setInterval(displayCurrentTime, 10);
 
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-  }
+const divElement = document.querySelector('.backcandle'); 
+
+divElement.addEventListener('click', function() {
+  window.location.href = 'https://chchristine03.github.io/core3topics/index.html';
+});

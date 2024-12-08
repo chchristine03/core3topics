@@ -1,0 +1,45 @@
+#time{
+    font-size: 6vw;
+    color: red;
+    z-index:100;
+    font-family: "forma-djr-micro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%, -80%);
+}
+
+.grandma img{
+    width: 30vw;
+    height:auto;
+    border: 0.5vw solid #a5f0ff;
+}
+body{
+    background-color: black;
+
+}
+  .container {
+
+    color: white;
+    position: absolute;
+    top: 20%;
+    left:30%;
+
+  }
+  
+
+
+  .backcandle img {
+    width:60px;
+    height:auto;
+    filter: opacity(100%) brightness(0%);
+
+  }
+  .backcandle {
+    position:absolute;
+    top: 10px;
+    right:100px;
+    filter: drop-shadow(0px 0px 10px #77d8ff);
+  }
