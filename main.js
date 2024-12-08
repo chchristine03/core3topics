@@ -19,9 +19,9 @@ div17Element.addEventListener('click', function() {
 });
 
 
-const divElement4 = document.querySelector('.d22'); 
+const divElement22 = document.querySelector('.d22'); 
 
-divElement1.addEventListener('click', function() {
+divElement22.addEventListener('click', function() {
   window.location.href = 'https://chchristine03.github.io/core3topics/story4/index.html';
 });
 
