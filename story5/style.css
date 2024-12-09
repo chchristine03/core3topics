@@ -4,6 +4,7 @@
     --cursorX: 50vw;
     --cursorY: 50vh;
   }
+
   :root:before {
     content: '';
     display: block;
@@ -24,6 +25,7 @@
     height:100%;
     background-color: brown;
   }
+
   .text{
     position: flex;
     justify-content: center;

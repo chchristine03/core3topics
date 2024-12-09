@@ -41,8 +41,8 @@ body {
     aspect-ratio: 1; /* Ensures squares remain 1:1 in ratio */
     overflow: hidden; /* Prevents content from expanding the box */
     
-    
 }
+
 .grid-item img {
     object-fit: contain;
     max-width: 100%;
@@ -55,7 +55,6 @@ body {
     border-color:rgb(224, 202, 202);
 
 }
-
 
 .writing{
     margin-top:10px;
