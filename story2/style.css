@@ -1,9 +1,8 @@
-:root {
-	--spacing: 200px;
-}
 
 body {
-	padding: var(--spacing);
+  margin-left:5vw;
+
+  margin-top:7vw;
 	background-color: rgb(191 47 46);
 }
 
@@ -36,7 +35,7 @@ body {
     font-family: "legitima", serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 200px;
+    font-size: 13vw;
     text-align: center;
     justify-content: center;
     border: 3px solid rgba(255, 88, 88, 0);
@@ -46,6 +45,7 @@ body {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: rgb(214, 208, 169);
     z-index: 10;
+    width:90vw;
 }
 
 .draggable {
@@ -86,14 +86,14 @@ body {
 .text1 {
     width: 500px;
     position:absolute;
-    top:650px;
-    left:200px;
+    margin-top:5vw;
+    left:10vw;
 }
 .text2 {
     width: 500px;
-    position:absolute;
-    top:650px;
-    right:100px;
+    position:relative;
+    margin-top:5vw;
+    left:50vw;
 }
 
 .vignette {

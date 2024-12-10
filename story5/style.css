@@ -24,17 +24,23 @@
     width:100%;
     height:100%;
     background-color: brown;
+    background-image: url("imgs/alone.jpg");
+    object-fit: fill;
+
   }
 
   .text{
     position: flex;
     justify-content: center;
-    text-align:center;    font-family: "legitima", serif;
-    font-weight: 500;
+    text-align:center;   
+    font-family: "legitima", serif;
+    font-weight: 700;
     font-style: normal;
     font-style: normal;
     font-size: 30px;
     margin-top:25%;
+    margin-left:18vw;
+    color: rgb(75, 150, 255);
   }
 
   .backcandle img {
