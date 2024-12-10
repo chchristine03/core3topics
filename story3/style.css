@@ -227,3 +227,15 @@ button {
 .blue{
     background-color: rgb(27, 31, 147);
 }
+.scrolldown{
+    color: rgb(161, 194, 248);
+    font-family: "forma-djr-micro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    display:flex;
+    justify-content:right ;
+    margin-top:1vw;
+    padding-right:10vw;
+
+}
