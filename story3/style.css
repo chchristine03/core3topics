@@ -1,107 +1,156 @@
-body {
-    background-color: rgba(255, 192, 203, 0);
+body{  
+    background-color: rgb(27, 31, 147);
+    padding:3vw;
+}
+.first-ad{
+    width:50vw;
+    height:auto;
+    background-color: rgb(194, 32, 59);
+    text-align: center;
+    border: solid;
+    border-width: 0.5vw;
+    border-color:rgb(75, 150, 255);
+    color:rgb(255, 255, 255);
+    position:fixed;
+    top:2vw;
+    left:4vw;
+}
+
+.legitima{
     font-family: "legitima", serif;
     font-weight: 500;
     font-style: normal;
-    font-size:30px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: rgb(161, 194, 248);
-  }
-  header {
+}
+.forma{
+    font-family: "forma-djr-micro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.title{
+    font-size: 4vw;
+    background-color: rgba(0, 255, 255, 0);
+}
+.description{
+    font-size: 1.5vw;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top:-4vw;
+}
+
+.second-ad{
+    width:20vw;
+    background-color: rgb(194, 32, 59);
     text-align: center;
-    padding: 20px;
-    background-color: rgb(191 47 46);
+    border: solid;
+    border-width: 0.5vw;
+    border-color:rgb(75, 150, 255);
+    color:rgb(255, 255, 255);
+    position:sticky;
+    top:10vw;
+    left:34vw;
+    z-index:2;
+    transform: rotate(-20deg);
+}
 
-  }
+.birthdaygirl img{
+    width:100%;
+    height:auto;
+}
 
-  #content-container {
+.third-ad{
+    width:20vw;
+    height:auto;
+
+    position:sticky;
+    top:20vw;
+    left:25vw;
+    background-color: rgb(18, 91, 186);
+    border: solid;
+    border-width: 0.5vw;
+    border-color:rgb(75, 150, 255);
+    z-index:3;
+}
+
+.cake img{
+    width:100%;
+}
+
+.fourth-ad{
+    position:fixed;
+    top:10vw;
+    left:60vw;
+    width:30vw;
+    height:auto;
+    background-color: rgb(32, 194, 137);
+    border: solid;
+    border-width: 0.5vw;
+    border-color:rgb(75, 150, 255);
+    color:rgb(255, 255, 255);
+
+    z-index:0;
+}
+
+.fifth-ad{
+    position:sticky;
+    width:18vw;
+    height:auto;
+    top:4vw;
+    left:10vw;
+    z-index:5;
+    background-color: rgb(142, 175, 227); 
+    border: solid;
+    border-width: 0.5vw;
+    border-color:rgb(75, 150, 255);
+    color:rgb(255, 255, 255);
     display: flex;
-    justify-content: space-between; /* Ensure space between the sections */
-    align-items: flex-start; /* Align items at the top */
-    gap: 20px; /* Optional: Add space between sections */
-    margin: 20px;
-  }
-
-  #advertisement {
-    width:50%;
-    background-color: #445992;
-    padding:30px;
-  }
-
-  #tickets {
-    background-color: #1c1a3b;
-    width:40%;
-    padding:30px;
-  }
-
- #congratulations {
-    background-color: #e4f0f5;
+    justify-content: center;
+    text-align: center;
     }
-  
-  textarea{
-    max-width: 80%;
-  }
-  
-  textarea {
-    width: 100%;
+
+textarea{
+    max-width: 100%;
     height: 100px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     padding: 10px;
-  }
-  button {
-    background-color: #f78fb3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: #ff6b81;
-  }
-  .ticket-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .ticket-section input {
-    width: 70px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
 
-  .description{
-    font-size:2vw;
-  }
-  .birthdaygirl img{
-    width:30vw;
-    height: auto;
-  }
-
-  .info{
-    position:absolute;
-    top:100px;
-    z-index:100;
-    margin-left:10%;
-  }
-
-  .cake img{
-    width: 500px;
-    height:auto;
-    margin-top: 200px;
-  }
-  h1{
-    font-family: "forma-djr-micro", sans-serif;
-    font-weight: 700;
+    font-size:1.5vw;
+    font-family: "legitima", serif;
+    font-weight: 500;
     font-style: normal;
-    font-size: 7vw;
-    color: white;
+    }
+button {
+    background-color:rgb(191 47 46);  
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-family: "legitima", serif;
+        font-weight: 500;
+        font-style: normal;  
+      }
+      
+      button:hover {
+        background-color: #ff6b81;
+      }
+
+  #tickets {
+    background-color: rgb(142, 175, 227); 
+    padding:30px;
   }
+      .ticket-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .ticket-section input {
+        width: 70px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+    
 
   .backcandle img {
     width:60px;
@@ -110,24 +159,71 @@ body {
 
   }
   .backcandle {
-    position:absolute;
+    position:fixed;
     top: 10px;
     right:100px;
     filter: drop-shadow(0px 0px 10px #77d8ff);
   }
 
-.grid-container {
-  display: grid;
-  column-gap: 20px;
-  grid-template-columns: auto auto ;
-  background-color: #2196F3;
-  padding: 10px;
+  .spacer{
+    height: 100vh; 
+    width:auto;
+    background-color: rgba(255, 192, 203, 0);
+  }
+
+.sixth-ad{
+    width:20vw;
+    height:auto;
+
+    position:sticky;
+    top:22vw;
+    left:53vw;
+    background-color: rgb(18, 91, 186);
+    border: solid;
+    border-width: 0.5vw;
+    border-color:rgb(75, 150, 255);
+    z-index:3;
+    transform: rotate(15deg);
 }
 
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 24px;
-  text-align: center;
+.birthday img{
+    width:100%;
+}
+
+
+
+.seventh-ad{
+    width:20vw;
+    height:auto;
+
+    position:sticky;
+    top:30vw;
+    left:83vw;
+    background-color: rgb(18, 91, 186);
+    border: solid;
+    border-width: 0.5vw;
+    border-color:rgb(75, 150, 255);
+    z-index:3;
+    transform: rotate(65deg);
+}
+
+.party img{
+    width:100%;
+}
+
+
+
+.red{
+    background-color:rgb(191 47 46);  
+}
+.lightblue{
+    background-color: rgb(142, 175, 227); 
+}
+
+#notesList{
+    text-align: left;
+}
+
+.blue{
+    background-color: rgb(27, 31, 147);
 }
